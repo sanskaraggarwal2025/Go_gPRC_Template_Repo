@@ -1,3 +1,3 @@
-module testing/backend
+module {{.ProjectModule}}
 
 go 1.24.5

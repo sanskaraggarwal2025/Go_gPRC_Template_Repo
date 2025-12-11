@@ -1,4 +1,4 @@
-module mono
+module {{.Module}}
 
 go 1.24.5
 
