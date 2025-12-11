@@ -2,14 +2,14 @@ syntax = "proto3";
 
 package service;
 
-option go_package = "{{.ProjectModule}}/{{.ServiceModule}}/proto";
+option go_package = "testing/backend/first_service/proto";
 
 service Service {
     rpc SayHello (HelloRequest) returns (HelloResponse);
 }
 
 message HelloRequest {
-    string name = 1;
+    string naam = 1;
 }
 
 message HelloResponse {

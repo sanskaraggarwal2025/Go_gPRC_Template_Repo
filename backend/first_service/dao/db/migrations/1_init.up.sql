@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS first_service_message (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    message TEXT NOT NULL
+);

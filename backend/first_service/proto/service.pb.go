@@ -23,7 +23,7 @@ const (
 
 type HelloRequest struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
-	Name          string                 `protobuf:"bytes,1,opt,name=name,proto3" json:"name,omitempty"`
+	Naam          string                 `protobuf:"bytes,1,opt,name=naam,proto3" json:"naam,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -58,9 +58,9 @@ func (*HelloRequest) Descriptor() ([]byte, []int) {
 	return file_service_proto_rawDescGZIP(), []int{0}
 }
 
-func (x *HelloRequest) GetName() string {
+func (x *HelloRequest) GetNaam() string {
 	if x != nil {
-		return x.Name
+		return x.Naam
 	}
 	return ""
 }
@@ -115,11 +115,11 @@ const file_service_proto_rawDesc = "" +
 	"\n" +
 	"\rservice.proto\x12\aservice\"\"\n" +
 	"\fHelloRequest\x12\x12\n" +
-	"\x04name\x18\x01 \x01(\tR\x04name\")\n" +
+	"\x04naam\x18\x01 \x01(\tR\x04naam\")\n" +
 	"\rHelloResponse\x12\x18\n" +
 	"\amessage\x18\x01 \x01(\tR\amessage2D\n" +
 	"\aService\x129\n" +
-	"\bSayHello\x12\x15.service.HelloRequest\x1a\x16.service.HelloResponseB\x1dZ\x1btesting/first_service/protob\x06proto3"
+	"\bSayHello\x12\x15.service.HelloRequest\x1a\x16.service.HelloResponseB%Z#testing/backend/first_service/protob\x06proto3"
 
 var (
 	file_service_proto_rawDescOnce sync.Once
